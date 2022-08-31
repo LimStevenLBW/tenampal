@@ -78,15 +78,15 @@ function App() {
           <Gallery />
 
           <Row className="App-Location">
-            <Col>
+            <Col xl={4}>
               <Hours />
             </Col>
 
-            <Col>
+            <Col xl={4}>
               <img src={building} className="App-Col" alt="building" />
             </Col>
 
-            <Col>
+            <Col xl={4}>
               <img src={map} className="App-Col" alt="map" />
               <div className="App-Map-Caption">Map sourced from Google ©2022</div>
             </Col>
