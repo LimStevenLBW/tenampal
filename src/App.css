@@ -56,6 +56,19 @@
 
 }
 
+.App-Address {
+  color: rgb(209, 153, 153);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 1);
+}
+
 h1 {
   color: rgb(241, 241, 241);
   font-size: 3.5rem;
@@ -125,6 +138,7 @@ h2 {
 .Gallery-Food {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -5,6 +5,9 @@ import insta from '../media/insta.svg';
 import logo_trans from '../media/logo_trans.png';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Scroll from 'react-scroll'
+import { HashLink } from 'react-router-hash-link';
+const ScrollLink = Scroll.ScrollLink
 
 const NavBarDesign = () => {
 
@@ -20,10 +23,24 @@ const NavBarDesign = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
 
                     <Nav className="me-auto  w-100 justify-content-center ">
-                        <Nav.Link href="#home">Menu</Nav.Link>
-                        <Nav.Link href="#link">About Us</Nav.Link>
-                        <Nav.Link href="#link">Location</Nav.Link>
-                        <Nav.Link href="#link">COVID-19</Nav.Link>
+                        <Nav.Link href="">Menu</Nav.Link>
+                        <Nav.Link>
+                            <HashLink
+                                to="/path#about_section"
+                                scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })}
+                            >
+                                About Us
+                            </HashLink>
+                        </Nav.Link>
+
+                        <Nav.Link>
+                            <HashLink
+                                to="/path#location_section"
+                                scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })}
+                            >
+                                Location
+                            </HashLink>
+                        </Nav.Link>
                     </Nav>
 
                     <Nav className="me-auto">

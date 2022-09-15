@@ -22,8 +22,8 @@ const Gallery = () => {
                 className="Carousel"
             >
                 {gallery.map((value, index) => {
-                    return <Carousel.Item>
-                        <img key={index} className="Gallery-Food" src={value} />
+                    return <Carousel.Item key={index}>
+                        <img className="Gallery-Food" src={value} />
                     </Carousel.Item>
                 })}
 
