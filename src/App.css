@@ -27,6 +27,15 @@
   background-attachment: fixed;
 }
 
+.Menu-Banner {
+  background-image: url("./media/bg.jpg");
+  height: 125vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .App-Banner-Link {
   color: aliceblue;
 }
@@ -67,6 +76,26 @@ a {
 
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 1);
+}
+
+.Menu {
+  padding-top: 1%;
+  padding-left: 25%;
+  padding-right: 25%;
+  color: rgb(238, 237, 237);
+
+}
+
+.Menu-Shadow {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5));
+}
+
+
+.Menu-Item {
+  margin: auto;
+  border: 2px solid WHITE;
+
 }
 
 h1 {

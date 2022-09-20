@@ -23,24 +23,25 @@ const NavBarDesign = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
 
                     <Nav className="me-auto  w-100 justify-content-center ">
-                        <Nav.Link href="">Menu</Nav.Link>
-                        <Nav.Link>
-                            <HashLink
-                                to="/path#about_section"
-                                scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })}
-                            >
+                        <Nav.Link href="/menu">Menu</Nav.Link>
+                        <HashLink
+                            to="/path#about_section"
+                            scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })}
+                        >
+                            <div className="nav-link">
                                 About Us
-                            </HashLink>
-                        </Nav.Link>
+                            </div>
 
-                        <Nav.Link>
-                            <HashLink
-                                to="/path#location_section"
-                                scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })}
-                            >
+                        </HashLink>
+
+                        <HashLink
+                            to="/path#location_section"
+                            scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })}
+                        >
+                            <div className="nav-link">
                                 Location
-                            </HashLink>
-                        </Nav.Link>
+                            </div>
+                        </HashLink>
                     </Nav>
 
                     <Nav className="me-auto">
